@@ -124,7 +124,10 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Post $post)
-    {
+    {   
+        if($post->cover_image){
+            Storage::delete($post->cover_image);
+        }
         $post->delete();
         $message = 'Cancellazione post completata';
         return redirect()->route('admin.posts.index', ['message' => $message]);
