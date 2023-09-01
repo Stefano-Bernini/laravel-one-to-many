@@ -108,6 +108,10 @@
                                         class="list-group-item list-group-item-action py-2 ripple bg-danger fw-bold text-white">
                                         <i class="fas fa-chart-area fa-fw me-3"></i><span>Posts</span>
                                     </a>
+                                    <a href="{{ route('admin.categories.index') }}"
+                                        class="list-group-item list-group-item-action py-2 ripple bg-danger fw-bold text-white">
+                                        <i class="fas fa-chart-area fa-fw me-3"></i><span>Categories</span>
+                                    </a>
                                     <a href="#"
                                         class="list-group-item list-group-item-action py-2 ripple bg-danger fw-bold text-white"><i
                                             class="fas fa-lock fa-fw me-3"></i><span>User</span></a>
